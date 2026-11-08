@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, CheckCircle2, Lock } from "lucide-react";
 
-const modules = [
+type CourseModule = [   moduleNumber: string,   title: string,   description: string,   lessons: string[] ];  const modules: CourseModule[] = [
   ["01","Seeing Clearly","Get honest about where you are.",["The truth about stuck","The noise around you","Your current reality"]],
   ["02","Understanding Your Season","Read your season without comparison.",["What season are you in?","Capacity, constraints & context","What this season is asking of you"]],
   ["03","Finding Your Direction","Turn vague ambition into a direction.",["Desire vs direction","The intersection","Choosing what matters"]],

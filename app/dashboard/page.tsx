@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, BookOpen, CheckCircle2, Download, LogOut } from "lucide-react";
 
-const modules = [
+type DashboardModule = [   moduleNumber: string,   title: string,   lesson: string,   done: boolean ];  const modules: DashboardModule[] = [
   ["01","Seeing Clearly","3 lessons",true],["02","Understanding Your Season","3 lessons",true],["03","Finding Your Direction","4 lessons",false],["04","Making the Move","3 lessons",false],["05","Building Your Execution System","4 lessons",false],["06","Becoming the Person Who Moves","3 lessons",false]
 ];
 
